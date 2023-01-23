@@ -5,7 +5,6 @@ import YourBotArmy from "./YourBotArmy";
 import BotCollection from "./BotCollection";
 
 function BotsPage() {
-  //start here with your code for step one
   const [bots, setBots] = useState([]);
   const [army, setArmy] = useState([]);
 
@@ -17,7 +16,7 @@ function BotsPage() {
     setArmy((army) => army.filter((it) => it.id !== bot.id));
   }
   useEffect(() => {
-    fetch("http://localhost:8002/bots")
+    fetch("https://api.npoint.io/e78441151ea3151da621")
       .then((res) => res.json())
       .then((data) => setBots(data));
   }, []);
