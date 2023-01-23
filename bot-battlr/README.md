@@ -1,3 +1,36 @@
+# Project Title
+
+    Bot-Battlr
+
+# Description
+
+- See profiles of all bots rendered in `BotCollection`.
+- Add an individual bot to my army by clicking on it. The selected bot should
+  render in the `YourBotArmy` component. The bot can be enlisted only **once**.
+  The bot **does not** disappear from the `BotCollection`.
+- Release a bot from my army by clicking on it. The bot disappears from the
+  `YourBotArmy` component.
+- Discharge a bot from their service forever, by clicking the red button marked
+  "x", which would delete the bot both from the backend and from the
+  `YourBotArmy` on the frontend.
+
+# Installation
+
+You can run the project by :
+
+Cloning it using the command: git clone https://github.com/FranklinKipchumba/WK3-Code-Challenge-Bot-Battlr
+You can also use github pages to open the website. url: https://github.com/FranklinKipchumba/WK3-Code-Challenge-Bot-Battlr
+Once you have the project in the folder run the "index.html" in any browser of your choice.
+The html file is linked to all the javascript files in the folder also the css file.
+
+# Authors
+
+Franklin Kipchumba
+
+# License
+
+ISC
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
