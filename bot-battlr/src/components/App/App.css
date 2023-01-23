@@ -32,17 +32,19 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-.dflex{
+
+.dflex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,42 +55,50 @@
   background-color: aqua;
 }
 
-nav{
+nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
   color: white;
-  .logo{
-    @extend .dflex
-    font-size: 30px;
-    text-transform: uppercase;
-  }
-  ul{
-    @extend .dflex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  li{
-    font-size: 14px;
-    margin-left: 15px;
-    padding: 10px;
-    box-sizing: border-box;
-    color: white;
-    cursor: pointer;
-  }
-  .search{
-    color: white;
-    .fa{
-      cursor: pointer;
-      + .fa{
-        margin-left: 15px;
-      }
-    }
-  }
 }
 
-.main_content{
+.logo {
+  @extend .dflex font-size: 30px;
+  text-transform: uppercase;
+}
+
+ul {
+  @extend .dflex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  font-size: 14px;
+  margin-left: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+}
+
+.search {
+  color: white;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+.fa {
+  margin-left: 15px;
+}
+
+
+
+
+.main_content {
   @extend .dflex;
   position: relative;
   width: 70%;
@@ -97,54 +107,61 @@ nav{
   box-sizing: border-box;
   justify-content: space-between;
   flex-wrap: wrap;
-  h3{
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: $text;
-    font-size: 20px;
-  }
-  .card{
-    width: 30%;
-    border-radius: 15px;
-    @extend .dflex;
-    flex-direction: column;
-    position: relative;
-    transform: scale(.8);
-    transition: all .3s ease-in-out;
-    margin-bottom: 50px;
-    .card_img{
-      margin-top: -5vw;
-      img{
-        width: 200px;
-      }
-    }
-    .card_header{
-      @extend .dflex;
-      flex-direction: column;
-      color: white;
-      margin: 25px 0;
-    }
-    .card:hover{
-      background-color: #61dafb;
-      transform: scale(1.1);
-      cursor: pointer;
-    }
-    .card:hover{
-      .btn{
-        background-color: black;
-        color: white;
-      }
-    }
-  }
 }
 
-.btn{
+h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.card {
+  width: 30%;
+  border-radius: 15px;
+  @extend .dflex;
+  flex-direction: column;
+  position: relative;
+  transform: scale(.8);
+  transition: all .3s ease-in-out;
+  margin-bottom: 50px;
+}
+
+.card_img {
+  margin-top: -5vw;
+}
+
+img {
+  width: 200px;
+}
+
+.card_header {
+  @extend .dflex;
+  flex-direction: column;
+  color: white;
+  margin: 25px 0;
+}
+
+.card:hover {
+  background-color: #61dafb;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+.btn {
   width: 130px;
   height: 35px;
   font-size: 14px;
   border-radius: 35px;
-  background-color: $text;
+  background-color: aqua;
   color: white;
   @extend .dflex;
   cursor: pointer;

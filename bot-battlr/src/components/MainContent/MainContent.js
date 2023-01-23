@@ -1,9 +1,9 @@
 import React from 'react'
-import ProductCard from "../ProductData/ProductData"
+import bots from "./db.json"
 
 const MainContent = () => {
-  console.log(ProductCard);
-  const listItems = ProductCard.map((bots) => 
+  console.log(bots);
+  const listItems = bots.map((bots) => 
     <div className='card' key={bots.id}>
       <div className='card_img'>
         <img src={bots.image} alt={bots.name} />
