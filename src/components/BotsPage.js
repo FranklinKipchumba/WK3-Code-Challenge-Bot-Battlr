@@ -22,7 +22,7 @@ function BotsPage() {
   }, []);
 
   function handleDelete(bot) {
-    fetch(`http://localhost:8002/bots/${bot.id}`, {
+    fetch(`https://api.npoint.io/e78441151ea3151da621${bot.id}`, {
       method: "DELETE",
     }).then(() => {
       setBots((bots) => bots.filter((it) => it.id !== bot.id));
